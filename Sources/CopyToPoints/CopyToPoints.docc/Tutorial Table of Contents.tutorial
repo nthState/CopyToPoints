@@ -1,15 +1,12 @@
 @Tutorials(name: "text") {
-    @Intro(title: "text") {
-        text
+    @Intro(title: "Guides using Copy To Points") {
+        Guides on using Copy to Points
         
-        @Image(source: file, alt: "accessible description")
     }
     
-    @Chapter(name: "text") {
-        text
-        
-        @Image(source: file, alt: "accessible description")
-        
+    @Chapter(name: "Getting Started with Copy To Points") {
+        An introduction to using Copy to Points
+      
         @TutorialReference(tutorial: "doc:Getting-Started-with-CopyToPoints")
     }
 }

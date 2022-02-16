@@ -17,7 +17,7 @@ public extension Shape {
   
 }
 
-/// Cope a view to each Path Joint 
+/// Copy a view to each Path Joint 
 public struct CopyToPoints<S, NewContent>: ViewModifier, ShapeStyle where S: Shape, NewContent: View {
   
   private let path: Path
@@ -32,8 +32,10 @@ public struct CopyToPoints<S, NewContent>: ViewModifier, ShapeStyle where S: Sha
     
     let points = path.indexedSegmentPoints
     
-    ForEach(points) { item in
-      innerContent(item.id, item.point)
+    ZStack {
+      ForEach(points) { item in
+        innerContent(item.id, item.point)
+      }
     }
     
   }

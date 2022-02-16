@@ -1,29 +1,51 @@
 @Tutorial() {
-    @Intro(title: "text") {
-        text
-        
-        @Image(source: file, alt: "accessible description")
+  @Intro(title: "Getting Started with Copy To Points") {
+    Copy a View to each point on a Shape
+  }
+  
+  @Section(title: "Getting Started") {
+    @ContentAndMedia {
+      Add a Circle to each point on a Rectangle
+      
     }
     
-    @Section(title: "text") {
-        @ContentAndMedia {
-            text
-            
-            @Image(source: file, alt: "accessible description")
-        }
+    @Steps {
+      
+      @Step {
+        Start with a View
         
-        @Steps {
-            @Step {
-                text
-                
-                @Image(source: file, alt: "accessible description")
-            }
-            
-            @Step {
-                text
-                
-                @Code(name: "display name", file: filename.swift)
-            }
+        @Code(name: "CopyToPoints.swift", file: "01_copy.swift") {
+          @Image(source: "01_copy.png", alt: "accessible description")
         }
+      }
+      @Step {
+        Import `CopyToPoints` Swift Package
+        
+        @Code(name: "CopyToPoints.swift", file: "02_copy.swift") {
+          
+        }
+      }
+      
+      @Step {
+        Add the View Modifier
+        
+        The index is zero based and counts up, the point is in the range 0 to 1, so we'll need to scale it up
+        
+        @Code(name: "CopyToPoints.swift", file: "03_copy.swift") {
+          @Image(source: "03_copy.png", alt: "accessible description")
+        }
+      }
+      
+      @Step {
+        
+        We can set the position of a Circle to sit at each point of the `Rectangle`
+        
+        Use the index to change the colour dynamically
+        
+        @Code(name: "CopyToPoints.swift", file: "03_copy.swift") {
+          @Image(source: "03_copy.png", alt: "accessible description")
+        }
+      }
     }
+  }
 }
