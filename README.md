@@ -43,3 +43,8 @@ public extension Shape {
   
 }
 ```
+
+| Before | After |
+|--------|-------|
+![Before](Sources/CopyToPoints/CopyToPoints.docc/Resources/Images/01_copy.png)|![After](Sources/CopyToPoints/CopyToPoints.docc/Resources/Images/03_copy.png)
+
