@@ -5,6 +5,13 @@ THe result is you can place views at the joints along a path.
 
 ## Overview
 
+
+| Before | After |
+|--------|-------|
+![Before](01_copy.png)|![After](03_copy.png)
+
+
+
 ```
 import CopyToPoints
 import SwiftUI
@@ -48,6 +55,8 @@ public extension Shape {
 
 ## Topics
 
-### Group
+### Guides
+
+- <doc:Getting-Started-with-CopyToPoints>
 
 - ``CopyToPoints/CopyToPoints``
